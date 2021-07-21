@@ -156,7 +156,7 @@
     return [self _SP_getViewControllerType:[self _SP_topViewController]];
 }
 
-- (UIViewController *) _SP_topViewController {
+- (UIViewController *) _SP_topViewController NS_EXTENSION_UNAVAILABLE("Private method is not supported in extensions.") {
     UIWindow *keyWindow = nil;
     NSArray<UIWindow *> *windows = [UIApplication sharedApplication].windows;
     for (UIWindow *window in windows) {
